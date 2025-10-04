@@ -9,7 +9,7 @@ import { ragMiddleware } from "@/ai/rag-middleware";
 import { createMessage, getChatById } from "@/app/db";
 import { auth } from "@/app/(auth)/auth";
 // Model + middleware
-const baseModel = google("gemini-1.5-flash-8b");
+const baseModel = google("gemini-2.0-flash");
 const model = wrapLanguageModel({ model: baseModel, middleware: ragMiddleware });
 console.log("[ROUTE] model:", model)
 // ---- helpers & types (define them in this file) ----

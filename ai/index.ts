@@ -11,6 +11,6 @@ import { ragMiddleware } from "./rag-middleware";
 // });
 
 export const customModel = wrapLanguageModel({
-  model: google('gemini-1.5-flash-8b"'),
+  model: google('gemini-2.0-flash'),
   middleware: ragMiddleware,
 });
